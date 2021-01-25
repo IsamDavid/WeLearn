@@ -9,8 +9,8 @@ const { sign } = require('crypto');
 
 //Inicializaciones
 const app = express();
-require('./database');
-require('./passport/local-auth');
+require('./src/database');
+require('./src/passport/local-auth');
 
 
 
@@ -41,7 +41,7 @@ app.use((req, res, next) => {
     next();
 })
 //Routes
-app.use('/', require('./routes/index'));
+app.use('/', require('./src/routes/index'));
 
 //Empezando el servidor
 app.listen(app.get('port'), () => {
