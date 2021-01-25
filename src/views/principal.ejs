@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link  rel="icon"   href="../img/libros.png" type="image/png" />
+    <title>Primaria - Primer Grado</title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav">
+    <div class="container">
+        <div aling="left" class="logo"><img src="../../img/libros-logo.png" alt="log"o></div>
+        
+        <a class="navbar-brand" href="#"><span class="we">We</span> <span class="learn">Learn</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="/principal" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/perfil" class="nav-link">Mi Perfil</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#catalogo" class="nav-link"> Libros Descrgas</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <div class="container lista">
+        <div class="row">
+            <h2 class="text-center mt-2">Bienvenid@ <%=user.name%></h2>
+        </div>
+        
+    <!-- Catálogo -->
+    <div class="container pt-0" id="catalogo">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center py-5">Catálogo</h1>
+            </div>
+        </div>
+
+        <!-- PREESCOLAR -->
+        <div class="row">
+            <div class="col-12">
+                <h5 class="text-center">Preescolar</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center ">
+                <img class="img d-flex justify-content-center icon" src="img/lapices-de-colores.png" alt="">
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="accordion " id="acordeon">
+                <div class="accordion-item">
+                    <h2 class="accordion-header text-center" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Lista de libros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <!--Contenido-->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Primer Grado
+                                        </div>
+                                        <img src="img/preescolar/primer-grado-pres.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Segundo Grado
+                                        </div>
+                                        <img src="img/preescolar/segundo-grado-pres.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Tercer Grado
+                                        </div>
+                                        <img src="img/preescolar/segundo-grado-pres.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Material Complementario
+                                        </div>
+                                        <img src="img/preescolar/material-secundario-pres.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Primaria -->
+        <div class="row py-3">
+            <div class="col-12">
+                <h5 class="text-center">Primaria</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <img class="img d-flex justify-content-center icon" src="img/papeleria.png" alt="">
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="accordion " id="acordeon">
+                <div class="accordion-item">
+                    <h2 class="accordion-header text-center" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Lista de libros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <!--Contenido-->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Primer Grado
+                                        </div>
+                                        <img src="img/primaria/primero-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/primero-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Segundo Grado
+                                        </div>
+                                        <img src="img/primaria/segundo-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/segundo-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Tercer Grado
+                                        </div>
+                                        <img src="img/primaria/tercero-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/tercero-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Cuarto Grado
+                                        </div>
+                                        <img src="img/primaria/cuarto-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/cuarto-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Quito Grado
+                                        </div>
+                                        <img src="img/primaria/quinto-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/quinto-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Sexto Grado
+                                        </div>
+                                        <img src="img/primaria/sexto-primaria.jpg" class="card-img-top img-fluid">
+                                        <a href="/sexto-primaria" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secundaria -->
+        <div class="row py-3">
+            <div class="col-12">
+                <h5 class="text-center">Secundaria</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-center">
+                <img class="img d-flex justify-content-center icon" src="img/herramientas.png" alt="">
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="accordion " id="acordeon">
+                <div class="accordion-item">
+                    <h2 class="accordion-header text-center" id="headingOne">
+                        <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Lista de libros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#acordeon">
+                        <div class="accordion-body">
+                            <!--Contenido-->
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Primer Grado
+                                        </div>
+                                        <img src="img/secundaria/primero-secundaria.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Segundo Grado
+                                        </div>
+                                        <img src="img/secundaria/segundo-secundaria.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-3">
+                                    <div class="card">
+                                        <div class="card-header text-center">
+                                            Tercer Grado
+                                        </div>
+                                        <img src="img/secundaria/tercero-secundaria.jpg" class="card-img-top img-fluid">
+                                        <a href="#" class="btn btn-info btn-lg btn-block text-white mt-3">Ver libros</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

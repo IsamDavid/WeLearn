@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link  rel="icon"   href="../../img/libros.png" type="image/png" />
+    <title>Primaria - Primer Grado</title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav">
+        <div class="container">
+            <div aling="left" class="logo"><img src="../../img/libros-logo.png" alt="log"o></div>
+            
+            <a class="navbar-brand" href="#"><span class="we">We</span> <span class="learn">Learn</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="/principal" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/perfil" class="nav-link">Mi Perfil</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#catalogo" class="nav-link"> Libros Descrgas</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="/logout" class="nav-link">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container lista">
+        <figure class="container profile">
+            <img src="../img/graduated1.png" class="img-fluid rounded" alt="icono estudiante">
+        </figure>
+        <div class="card card-body position-relative mb-10">
+            <p class="profile-text"><%=user.name%></p>
+            <p class="profile-text">
+                correo: <%=user.email%>
+            </p>
+            <!-- <h3>
+                contraseña: <%=user.password%>
+            </h3> -->
+        </div>
+    </div>
+    
+
+
+    
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

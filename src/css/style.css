@@ -1,0 +1,84 @@
+#nav .we {
+    font-size: 1.8rem;
+    color: coral;
+}
+
+#nav .learn {
+    font-size: 1.8rem;
+    color: cornflowerblue;
+    font-style: oblique;
+}
+
+#gallery {
+    padding-top: 3.5rem;
+}
+
+#about {
+    min-height: 86vh;
+    padding-top: 10rem;
+}
+
+#nav a:hover {
+    background: rgba(40, 18, 44, 0.486);
+    border-radius: .5rem;
+}
+
+#catalogo {
+    padding: 5rem;
+}
+#catalogo .icon {
+    width: 200px;
+    height: 200px;
+}
+
+#nav .logo {
+    padding-right: .8rem;
+}
+
+#registro {
+    min-height: 86vh;
+}
+
+#registro .we {
+    font-size: 1.8rem;
+    color: coral;
+}
+
+#registro .learn {
+    font-size: 1.8rem;
+    color: cornflowerblue;
+    font-style: oblique;
+}
+
+#registro .formulario .iniciar {
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border-width: 5px;
+    border-radius: 3%;
+}
+
+#registro .texto-cuenta {
+    font-size: small;
+}
+
+.lista {
+    padding: 5rem;
+} 
+
+.profile{
+    width: 200px;
+    display: block;
+    /* top: 100px; */
+    margin-bottom: 100px;
+    border-radius: 100%;
+    background-color: #EFFFFF;
+}
+.profile-text{
+    font-size: 24px;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
